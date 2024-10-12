@@ -1,0 +1,221 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background:  #D6AD60 url(./library.jpg) center / cover no-repeat;
+    background-blend-mode: multiply;
+    min-height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+
+}
+.main {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    margin-bottom: 15px;
+
+
+}
+header{
+    width: 100%;
+
+}
+header h1 {
+    color: #ffb3a3;
+    font-size: 36px;
+    margin-bottom: 20px;
+    background-color: #292c3287;
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    font-weight: 1000;
+
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #181a1c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: fit-content;
+}
+
+button:hover {
+    background-color: black;
+}
+
+#libraryContainer {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.book-card {
+    background-color: #1b1e25d4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    /* text-align: center; */
+}
+
+.book-card h3 {
+    margin: 0 0 10px;
+    font-size: 22px;
+    color: #f46f52;
+    text-align: center;
+}
+
+.book-card p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #ffa1a1;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+    padding-top: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: start;
+
+}
+
+.close-button {
+    color: #aaa;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: #000;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+input {
+    margin-top: 5px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #000000db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #050505;
+}
+
+.book-card button {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.book-card .toggle-read-button {
+    background-color: #28A745 ;
+    color: white;
+}
+
+.book-card .toggle-read-button:hover {
+    background-color: #218838;
+}
+
+.book-card .remove-button {
+    background-color: #FF4136;
+    color: white;
+    margin-top: 5px;
+}
+
+.book-card .remove-button:hover {
+    background-color: #c0392b;
+}
+
+
+footer{
+    text-align: center;
+    padding: 0.5rem;
+    color: white;
+    /* position: absolute; */
+    bottom: 0;
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
+    background-color: #1b1e25;
+    width: 100%;
+    padding: 15px;
+    color: #f46f52;
+
+
+}
+footer a{
+    color: inherit;
+
+}

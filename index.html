@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="icon" href="https://cdn.icon-icons.com/icons2/2474/PNG/512/education_books_library_icon_149685.png"><link/>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>My Library</h1>
+    </header>
+    <button id="newBookButton">NEW BOOK</button>
+
+    <div class="main">
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <form id="bookForm">
+                    <label for="title">Title:</label>
+                    <input type="text" id="title" name="title" required>
+                    <label for="author">Author:</label>
+                    <input type="text" id="author" name="author" required>
+                    <label for="pages">Pages:</label>
+                    <input type="number" id="pages" name="pages" required>
+                    <div>
+                        <label for="read">Read:</label>
+                        <input type="checkbox" id="read" name="read">
+
+                    </div>
+                    <button type="submit">Add Book</button>
+                </form>
+            </div>
+        </div>
+        <div id="libraryContainer"></div>
+
+    </div>
+    <footer>© Copyright 2024 
+        <a href="mailto:“mohammedatef57@gmail.com">mohammedatef57@gmail.com</a>
+    </footer>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
